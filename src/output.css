@@ -622,6 +622,10 @@ video {
   margin-right: 950px;
 }
 
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+
 .flex {
   display: flex;
 }
@@ -753,5 +757,9 @@ video {
   .md\:mx-14 {
     margin-left: 3.5rem;
     margin-right: 3.5rem;
+  }
+
+  .md\:mt-\[200px\] {
+    margin-top: 200px;
   }
 }
