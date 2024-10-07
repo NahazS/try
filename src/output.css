@@ -686,9 +686,18 @@ video {
   justify-content: space-between;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
 .bg-\[\#333437\] {
   --tw-bg-opacity: 1;
   background-color: rgb(51 52 55 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .text-left {
