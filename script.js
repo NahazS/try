@@ -1,5 +1,8 @@
-var click = new Audio('sound/click.mp3');
-var error = new Audio('sound/error.mp3');
+console.log("vai tor ai khane kam nai jaiya type kor");
+let errorCounter = 0;
+let wordCounter = 0;
+let click = new Audio('sound/click.mp3');
+let error = new Audio('sound/error.mp3');
 const textArray = [
     'life is a beautiful journey filled with unexpected moments that shape us into who we are ',
     'embrace the present with gratitude for it holds the seeds of tomorrows memories and dreams ',
@@ -40,6 +43,12 @@ function updateTimer() {
     if (timeLeft < 0) {
         clearInterval(timerInterval);
         textArea.innerText = "Time's up!";
+        document.getElementById('timer').innerText = '';
+        let wpm = 2 * wordCounter;
+        let accuracy = 100 - Math.floor((errorCounter / currentIndex) * 100);
+        document.getElementById('onek_lekhsos').innerText = "vai ar koto lekhte chas. Exam hall ar moto shoro koira disos dekhi"
+        document.getElementById('wpm').innerText = "WPM : " + wpm; 
+        document.getElementById('acc').innerText = "ACC : " + accuracy + "%"; 
         document.removeEventListener('keyup', keyboard);
     }
 }
@@ -57,6 +66,8 @@ function keyboard(event) {
         click.play();
         spans[currentIndex].style.color = 'white';
         spans[currentIndex].style.borderBottom = '2px solid';
+        if(lastChar === " ")
+            wordCounter += 1;
         currentIndex++;
     } else if(lastChar === "backspace"){
         click.play();
@@ -68,8 +79,8 @@ function keyboard(event) {
         error.play();
         spans[currentIndex].style.color = 'red';
         spans[currentIndex].style.borderBottom = '2px solid';
+        errorCounter += 1;
         currentIndex++;
-        console.log(lastChar);
     }
 };
 document.addEventListener('keyup', keyboard);

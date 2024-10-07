@@ -573,6 +573,11 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mt-9 {
   margin-top: 2.25rem;
 }
@@ -627,6 +632,10 @@ video {
 
 .h-\[24px\] {
   height: 24px;
+}
+
+.h-\[28px\] {
+  height: 28px;
 }
 
 .max-h-\[400px\] {
@@ -686,6 +695,10 @@ video {
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-fuck {
   font-family: Lexend, sans-serif;
 }
@@ -720,4 +733,16 @@ video {
 .text-\[\#d1d0c5\] {
   --tw-text-opacity: 1;
   color: rgb(209 208 197 / var(--tw-text-opacity));
+}
+
+.text-\[\#dcb841\] {
+  --tw-text-opacity: 1;
+  color: rgb(220 184 65 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
 }
