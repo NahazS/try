@@ -626,6 +626,10 @@ video {
   margin-top: 70px;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -642,6 +646,10 @@ video {
   height: 28px;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .max-h-\[400px\] {
   max-height: 400px;
 }
@@ -656,6 +664,10 @@ video {
 
 .grow {
   flex-grow: 1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-row {
@@ -751,6 +763,34 @@ video {
 .text-\[\#dcb841\] {
   --tw-text-opacity: 1;
   color: rgb(220 184 65 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-35:hover {
+  opacity: 0.35;
+}
+
+.hover\:opacity-90:hover {
+  opacity: 0.9;
+}
+
+.hover\:opacity-5:hover {
+  opacity: 0.05;
+}
+
+.hover\:opacity-0:hover {
+  opacity: 0;
+}
+
+.hover\:opacity-20:hover {
+  opacity: 0.2;
+}
+
+.hover\:opacity-10:hover {
+  opacity: 0.1;
+}
+
+.hover\:opacity-50:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
