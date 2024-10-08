@@ -21,7 +21,6 @@ function openKeyboard() {
     hiddenInput.focus();
 }
 
-
 window.onload = openKeyboard;
 
 function randomNumber() {
