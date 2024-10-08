@@ -23,6 +23,7 @@ function openKeyboard() {
 
 window.onload = openKeyboard;
 
+
 function randomNumber() {
     return Math.floor(Math.random() * textArray.length);
 }
