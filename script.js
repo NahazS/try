@@ -19,6 +19,7 @@ const textArray = [
 function openKeyboard() {
     const hiddenInput = document.getElementById('hidden_input');
     hiddenInput.focus();
+    hiddenInput.click();
 }
 
 window.onload = openKeyboard;
