@@ -16,14 +16,6 @@ const textArray = [
     'joy can be found in the simplest things, if we open our hearts to receive it ',
     'laughter brings light to our darkest days, reminding us to cherish the moments of pure happiness ',
 ];
-function openKeyboard() {
-    const hiddenInput = document.getElementById('hidden_input');
-    hiddenInput.focus();
-    hiddenInput.click();
-}
-
-window.onload = openKeyboard;
-
 
 function randomNumber() {
     return Math.floor(Math.random() * textArray.length);
